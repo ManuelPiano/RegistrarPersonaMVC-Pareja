@@ -50,6 +50,21 @@ public class Persona {
     return false;
     }
     
+     public boolean eliminarDatos(){
+    try {
+    String miQuery = "delete from tb_persona where dui_persona=('" + dui + "');";
+    int estado = 0;
+    state = cnn.createStatement();
+    estado = state.executeUpdate(miQuery);
+    if(estado == 1){
+    return true;
+    }  
+    } catch (SQLException ex){
+            Logger.getLogger(Persona.class.getName()).log(Level.SEVERE, null, ex);
+            }
+    return false;
+    }
+     
     public ArrayList<Persona> consultarRegistros(){
     ArrayList<Persona> person = new ArrayList();
     try{

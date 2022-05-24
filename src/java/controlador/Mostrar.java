@@ -14,10 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import modelo.Persona;
 
-/**
- *
- * @author ITCA
- */
+
 public class Mostrar extends HttpServlet {
 
 
@@ -25,7 +22,7 @@ public class Mostrar extends HttpServlet {
             throws ServletException, IOException {
         
         Persona p = new Persona();
-        ArrayList<Persona> personas = new Arraylist();
+        ArrayList<Persona> personas = new ArrayList();
         personas = p.consultarRegistros();
         request.getSession().setAttribute("personas", personas);
         request.getRequestDispatcher("mostrartodo.jsp").forward(request, response);

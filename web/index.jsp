@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Registro de personas</h1>
+        <h1 style="text-align:center; color:#33ff33">Registro de personas</h1>
 
         <form action="recibirr.do" method="POST">
             <center>
@@ -39,6 +39,28 @@
                    </table>
                 </center>
         </form>
+        <br>
+        <br>
+        <h1 style="text-align:center; color:yellow">Eliminar Registro</h1>
+        <h4 style="text-align:center; color:red"> Por favor ingrese el N° de Dui del registro que desea eliminar</h4>
+         <form action="eliminar.do" method="POST">
+            <center>
+            <table border="1px">
+                <tr>
+                    <td> DUI:</td> <td><input type="text" name="txtDui" value="" /></td>
+                </tr>
+                             
+                <tr>
+               <td>
+                   <input type="submit" value="Eliminar"/>      
+               </td>
+                </tr>
+                   </table>
+                </center>
+        </form>
+        
+        
+        
         
     </body>
 </html>

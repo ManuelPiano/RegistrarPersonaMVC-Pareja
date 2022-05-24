@@ -8,6 +8,10 @@
         <servlet-name>Mostrar</servlet-name>
         <servlet-class>controlador.Mostrar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Eliminar</servlet-name>
+        <servlet-class>controlador.Eliminar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Recibir</servlet-name>
         <url-pattern>/recibir.do</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>Mostrar</servlet-name>
         <url-pattern>/mostrar.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Eliminar</servlet-name>
+        <url-pattern>/eliminar.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
