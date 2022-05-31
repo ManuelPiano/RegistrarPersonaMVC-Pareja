@@ -10,13 +10,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <h1 style="text-align:center; color:#33ff33">Registro de personas</h1>
+        <div class="container">
+        <h1>Registro de personas</h1>
 
         <form action="recibirr.do" method="POST">
             <center>
-            <table border="1px">
+            <table>
                 <tr>
                     <td> DUI:</td> <td><input type="text" name="txtDui" value="" /></td>
                 </tr>
@@ -41,18 +44,18 @@
         </form>
         <br>
         <br>
-        <h1 style="text-align:center; color:yellow">Eliminar Registro</h1>
-        <h4 style="text-align:center; color:red"> Por favor ingrese el N° de Dui del registro que desea eliminar</h4>
+        <h1>Eliminar Registro</h1>
+        <h4> Por favor ingrese el N° de Dui del registro que desea eliminar</h4>
          <form action="eliminar.do" method="POST">
             <center>
-            <table border="1px">
+            <table>
                 <tr>
                     <td> DUI:</td> <td><input type="text" name="txtDui" value="" /></td>
                 </tr>
                              
                 <tr>
                <td>
-                   <input type="submit" value="Eliminar"/>      
+                    <button type="submit" class="btn btn-primary" value="Eliminar">Submit</button>    
                </td>
                 </tr>
                    </table>
